@@ -1,63 +1,46 @@
 <!DOCTYPE html>
 <head>
-
         <meta name = "viewport" content="width=device-width, initial-scale = 0.1">
         <meta charset="utf-8">
         <title>Create Account</title>
-        <link rel="shortcut icon" href="">
-        <link rel = "stylesheet" href="./src/main.js">
+        <link rel = "stylesheet" href="./src/style.css">
 </head>
 
 <body>
-    <from  action ="connectDB.php" method = "POST" class="form" id="CreateAccount">
-        <h1 clas = "form__title">Create Account Admin</h1>
-
+    <from  class="form" id="CreateAccount">
+        <h1>Create Account Admin</h1>
        
-        <div class="form__input-group">
-            <input type="text" class="form__input" autofocus placeholder = "ID" name="ID_Admin">
-            <!-- <div class="form__input-error-message"></div> -->
+           <div >
+            <input type="text"  placeholder = "Password">
            </div>
     
-           <div class="form__input-group">
-            <input type="password" class="form__input" autofocus placeholder = "Password" name="Password_Admin">
-            <!-- <div class="form__input-error-message"></div> -->
-           </div>
-    
-           <div class="form__input-group">
-            <input type="password" class="form__input" autofocus placeholder = "Enter Password" name="EnterPassword_Admin">
-            <!-- <div class="form__input-error-message"></div> -->
-           </div>
-    
-           <div class="form__input-group">
-            <input type="text" class="form__input" autofocus placeholder = "Name" name="Name_Admin">
-            <!-- <div class="form__input-error-message"></div> -->
-           </div>
-    
-           <div class="form__input-group">
-            <input type="text" class="form__input" autofocus placeholder = "Last name" name="LastName_Admin">
-            <!-- <div class="form__input-error-message"></div> -->
-           </div>
-    
-           <div class="form__input-group">
-            <input type="text" class="form__input" autofocus placeholder = "Phone Number" name="PhoneNumber_Admin">
-            <!-- <div class="form__input-error-message"></div> -->
-           </div>
-
-           <div class="form__input-group">
-            <input type="text" class="form__input" autofocus placeholder = "Email" name="Email_Admin">
-            <!-- <div class="form__input-error-message"></div> -->
-           </div>
-    
+           <div >
+            <input type="text" placeholder = "Enter Password">
            
+           </div>
     
-           <button class="form__button" type="submit">Register</button>
+           <div class="form__input-group">
+            <input type="text"  autofocus placeholder = "Name">
+           
+           </div>
+    
+           <div >
+            <input type="text"   placeholder = "Last name">
+           
+           </div>
+    
+           <div>
+            <input type="text" placeholder = "Tel">
+           </div>
+    
+           <button  type="submit">Register</button>
 
     <p class="form__text">
-        <p>Already have an account? <a class ="form__link" href = "./index.html" id="LinkCreateAccount" class="form__link">Sign in</a></p>
+        <p>Already have an account? <a href = "./index.html">Sign in</a></p>
 
     </p>
     </from>
-    <script src="./src/main.js"></script>
+    <script src="./app.js"></script>
 
 
 </body>
